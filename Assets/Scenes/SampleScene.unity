@@ -10298,7 +10298,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ed04307c5a7043afeb9b9de85ceb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 50
+  speed: 0
+  jumpSpeed: 0
+  seedPrefab: {fileID: 0}
+  throwSpeed: 0
+  throwRotation: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!212 &2036531773
 SpriteRenderer:
   m_ObjectHideFlags: 0

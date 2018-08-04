@@ -57,5 +57,9 @@ public class Player : MonoBehaviour
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,jumpSpeed);
         }
+
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, .5f, groundLayer);
+        animator.SetBool("isInAir", !hit);
+        animator.SetFloat("AirBlend", _rigidbody2D.velocity.y);
     }
 }

@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Sprout : MonoBehaviour
 {
+    [Header("Assets")]
     public GameObject plantPrefab;
     public GameObject flowerPrefab;
 
+    [Header("Parameters")]
     public float growTime;
     public float growTimeRandomness;
     public LayerMask noGrowLayer;
     public float bloomTime;
     public float bloomTimeRandomness;
+
+    [Header("References")]
+    public SpriteRenderer spriteRenderer;
 
     float _lastGrowTime = 0;
     float _createTime = 0;

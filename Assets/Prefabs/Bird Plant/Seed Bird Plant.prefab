@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1638574157490646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.3891177, y: 3.434598, z: 0.0390625}
+  m_LocalPosition: {x: 6.712378, y: 3.0185502, z: 0.0390625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4466945006004934}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1716b53b4aea18f468449d7b07543fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantPrefab: {fileID: 1753660399655222, guid: 289a54c0cfdd1444781fca15b8b30cf7,
+  plantPrefab: {fileID: 1753660399655222, guid: f008475fb01276a4d8c05c8a7e6952d4,
     type: 2}
   checkForPlantRadius: 0.25
   plantLayer:
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -807454913
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300122, guid: 78361ec77276e3d4aa0dd1444a6f8025, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -9,95 +9,74 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1213131547722012}
+  m_RootGameObject: {fileID: 1753660399655222}
   m_IsPrefabAsset: 1
---- !u!1 &1213131547722012
+--- !u!1 &1302844801973642
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4591060463103538}
-  - component: {fileID: 114551123742026818}
-  - component: {fileID: 50744309263102768}
-  m_Layer: 10
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1372238906263958
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4660463713015908}
-  - component: {fileID: 212686708607366042}
-  - component: {fileID: 61542518276108180}
-  m_Layer: 10
+  - component: {fileID: 4855237288270552}
+  - component: {fileID: 212938302825588170}
+  - component: {fileID: 61095278074503528}
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4591060463103538
+--- !u!1 &1753660399655222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4553790302164710}
+  - component: {fileID: 114622116731414682}
+  m_Layer: 9
+  m_Name: Bird Plant Sprout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4553790302164710
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1213131547722012}
+  m_GameObject: {fileID: 1753660399655222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.98, y: 8.28, z: 0}
+  m_LocalPosition: {x: 6.6837635, y: 2.7152357, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4660463713015908}
+  - {fileID: 4855237288270552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4660463713015908
+--- !u!4 &4855237288270552
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372238906263958}
+  m_GameObject: {fileID: 1302844801973642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4591060463103538}
+  m_Father: {fileID: 4553790302164710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50744309263102768
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1213131547722012}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 2eda96b3ccb3c2b41bcb3ad834337ba0, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!61 &61542518276108180
+--- !u!61 &61095278074503528
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372238906263958}
+  m_GameObject: {fileID: 1302844801973642}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -115,33 +94,37 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114551123742026818
+--- !u!114 &114622116731414682
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1213131547722012}
+  m_GameObject: {fileID: 1753660399655222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 100ed04307c5a7043afeb9b9de85ceb7, type: 3}
+  m_Script: {fileID: 11500000, guid: dbfbf2951694872448c31d18ee6a6064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  jumpSpeed: 15
-  seedPrefab: {fileID: 1638574157490646, guid: 6760c2e6688d7164bb8318166617b28d, type: 2}
-  throwSpeed: 5
-  throwRotation: 50
-  groundLayer:
+  plantPrefab: {fileID: 1952272217734058, guid: 94e53b4e4bb8366438aa0aa27089a9b4,
+    type: 2}
+  flowerPrefab: {fileID: 1399257120347052, guid: 698bf04e67cb0f44c8fa71618a10fb1a,
+    type: 2}
+  growTime: 0.8
+  growTimeRandomness: 0.2
+  noGrowLayer:
     serializedVersion: 2
-    m_Bits: 0
---- !u!212 &212686708607366042
+    m_Bits: 256
+  bloomTime: 2.1
+  bloomTimeRandomness: 1
+  spriteRenderer: {fileID: 0}
+--- !u!212 &212938302825588170
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1372238906263958}
+  m_GameObject: {fileID: 1302844801973642}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -168,10 +151,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -807454913
+  m_SortingLayerID: 1593329987
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300116, guid: 78361ec77276e3d4aa0dd1444a6f8025, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 307259ca81ed45c4a8a67a12f1b10408, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

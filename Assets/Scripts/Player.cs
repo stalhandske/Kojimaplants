@@ -11,6 +11,10 @@ public class Player : MonoBehaviour
     public float throwRotation;
     public LayerMask groundLayer;
 
+    [Header("References")]
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+
     Rigidbody2D _rigidbody2D;
 
     void Awake()
@@ -21,6 +25,14 @@ public class Player : MonoBehaviour
 	void FixedUpdate ()
 	{
         Vector2 axisInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+	    bool isWalking = Mathf.Abs(axisInput.x) > .1f;
+        animator.SetBool("isWalking", isWalking);
+
+	    if (isWalking)
+	    {
+	        spriteRenderer.flipX = axisInput.x < 0;
+	    }
 
 	    float xVelocity = speed * axisInput.x;
 

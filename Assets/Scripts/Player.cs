@@ -5,9 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
+    public float jumpSpeed;
     public GameObject seedPrefab;
     public float throwSpeed;
     public float throwRotation;
+    public LayerMask groundLayer;
 
     Rigidbody2D _rigidbody2D;
 
@@ -20,19 +22,28 @@ public class Player : MonoBehaviour
 	{
         Vector2 axisInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-	    float xVelocity = speed * axisInput.x * Time.deltaTime;
+	    float xVelocity = speed * axisInput.x;
 
         _rigidbody2D.velocity = new Vector2(xVelocity, _rigidbody2D.velocity.y);
 	}
 
     void Update()
     {
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Vector2 spawnPosition = transform.position + Vector3.up * 1.5f;
+            if (!Physics2D.OverlapPoint(spawnPosition, groundLayer))
+            {
+                Seed seed = Instantiate(seedPrefab, spawnPosition, Quaternion.identity)
+                    .GetComponent<Seed>();
+                seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle + Vector2.up * 2) * throwSpeed;
+                seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotation, throwRotation);
+            }
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
-            Seed seed = Instantiate(seedPrefab, transform.position + Vector3.up*1.5f, Quaternion.identity)
-                .GetComponent<Seed>();
-            seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle + Vector2.up*2)* throwSpeed;
-            seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotation, throwRotation);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,jumpSpeed);
         }
     }
 }

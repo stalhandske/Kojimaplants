@@ -61,7 +61,10 @@ TextureImporter:
     21300112: bw_tiles_56
     21300114: Player1
     21300116: Player2
-    21300118: seed
+    21300118: seed0
+    21300120: bw_tiles_57
+    21300122: seed1
+    21300124: seed2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1351,7 +1354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: seed
+      name: seed0
       rect:
         serializedVersion: 2
         x: 25
@@ -1366,6 +1369,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de6e7a9a9a6db0d44904cdea7b8ba8c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bw_tiles_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88464d4dfea51f4795a3e4b47fadd6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seed1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcbfc908fba0174c89d6c71e0c14902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seed2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa542186edbcfc429da3c9864513e35
       vertices: []
       indices: 
       edges: []

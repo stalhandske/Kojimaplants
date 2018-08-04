@@ -153,10 +153,11 @@ MonoBehaviour:
   - {fileID: 1638574157490646, guid: 2f8fc825176dd294aaf727883fbe323b, type: 2}
   - {fileID: 1638574157490646, guid: 6760c2e6688d7164bb8318166617b28d, type: 2}
   throwSpeed: 5
+  throwRandomness: 0.1
   throwRotation: 50
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   animator: {fileID: 95890341153733562}
   spriteRenderer: {fileID: 212686708607366042}
 --- !u!212 &212686708607366042

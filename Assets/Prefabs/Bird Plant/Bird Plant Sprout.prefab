@@ -109,15 +109,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantPrefab: {fileID: 1952272217734058, guid: 94e53b4e4bb8366438aa0aa27089a9b4,
     type: 2}
-  flowerPrefab: {fileID: 1399257120347052, guid: 698bf04e67cb0f44c8fa71618a10fb1a,
+  flowerPrefab: {fileID: 1242055642117454, guid: decc8ab3cc207714282239f7c03e9eef,
     type: 2}
-  growTime: 0.8
-  growTimeRandomness: 0.2
+  growTime: 4
+  growTimeRandomness: 1
   noGrowLayer:
     serializedVersion: 2
     m_Bits: 256
-  bloomTime: 2.1
-  bloomTimeRandomness: 1
+  bloomTime: 10.5
+  bloomTimeRandomness: 5
   spriteRenderer: {fileID: 0}
 --- !u!212 &212938302825588170
 SpriteRenderer:
@@ -154,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 1593329987
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 307259ca81ed45c4a8a67a12f1b10408, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 5029d742d9e762841ac54d9d999e465c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float jumpSpeed;
     public GameObject[] seedPrefabs;
     public float throwSpeed;
+    public float throwRandomness;
     public float throwRotation;
     public LayerMask groundLayer;
 
@@ -48,7 +49,8 @@ public class Player : MonoBehaviour
             {
                 Seed seed = Instantiate(seedPrefabs[Random.Range(0,seedPrefabs.Length)], spawnPosition, Quaternion.identity)
                     .GetComponent<Seed>();
-                seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle + Vector2.up * 2) * throwSpeed;
+                int xDir = spriteRenderer.flipX ? -1 : 1;
+                seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle* throwRandomness + Vector2.up * 2 + (Vector2)transform.right*xDir) * throwSpeed;
                 seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotation, throwRotation);
             }
         }

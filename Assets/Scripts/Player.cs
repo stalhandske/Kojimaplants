@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float jumpSpeed;
-    public GameObject seedPrefab;
+    public GameObject[] seedPrefabs;
     public float throwSpeed;
     public float throwRotation;
     public LayerMask groundLayer;
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
             Vector2 spawnPosition = transform.position + Vector3.up * 1.5f;
             if (!Physics2D.OverlapPoint(spawnPosition, groundLayer))
             {
-                Seed seed = Instantiate(seedPrefab, spawnPosition, Quaternion.identity)
+                Seed seed = Instantiate(seedPrefabs[Random.Range(0,seedPrefabs.Length)], spawnPosition, Quaternion.identity)
                     .GetComponent<Seed>();
                 seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle + Vector2.up * 2) * throwSpeed;
                 seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotation, throwRotation);

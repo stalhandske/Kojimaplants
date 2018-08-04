@@ -130,7 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpSpeed: 15
-  seedPrefab: {fileID: 1638574157490646, guid: 6760c2e6688d7164bb8318166617b28d, type: 2}
+  seedPrefabs:
+  - {fileID: 1638574157490646, guid: 2f8fc825176dd294aaf727883fbe323b, type: 2}
+  - {fileID: 1638574157490646, guid: 6760c2e6688d7164bb8318166617b28d, type: 2}
   throwSpeed: 5
   throwRotation: 50
   groundLayer:
@@ -169,7 +171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -807454913
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300116, guid: 78361ec77276e3d4aa0dd1444a6f8025, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

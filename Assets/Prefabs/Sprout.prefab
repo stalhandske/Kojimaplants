@@ -107,6 +107,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbfbf2951694872448c31d18ee6a6064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plantPrefab: {fileID: 1952272217734058, guid: ad88588bc2a867e45a39301b12628717,
+    type: 2}
+  flowerPrefab: {fileID: 1242055642117454, guid: f3772848824ea9347ae3796f4df8d68e,
+    type: 2}
+  growTime: 0.5
+  growTimeRandomness: 0.2
+  noGrowLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  bloomTime: 1.1
+  bloomTimeRandomness: 0.6
 --- !u!212 &212938302825588170
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
     public GameObject[] seedPrefabs;
     public float throwSpeed;
     public float throwRandomness;
-    public float throwRotation;
+    public float throwRotationRandom;
+    public float throwRotationMin;
     public LayerMask groundLayer;
 
     [Header("References")]
@@ -51,7 +52,9 @@ public class Player : MonoBehaviour
                     .GetComponent<Seed>();
                 int xDir = spriteRenderer.flipX ? -1 : 1;
                 seed.GetComponent<Rigidbody2D>().velocity = (Random.insideUnitCircle* throwRandomness + Vector2.up * 2 + (Vector2)transform.right*xDir) * throwSpeed;
-                seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotation, throwRotation);
+                seed.GetComponent<Rigidbody2D>().angularVelocity = Random.Range(-throwRotationRandom, throwRotationRandom);
+                seed.GetComponent<Rigidbody2D>().angularVelocity +=
+                    Mathf.Sign(seed.GetComponent<Rigidbody2D>().angularVelocity) * throwRotationMin;
             }
         }
 

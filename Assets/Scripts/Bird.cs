@@ -9,6 +9,7 @@ public class Bird : MonoBehaviour
     public LayerMask repulseLayer;
     public float repulseDistance;
     public float attractionToStartPos;
+    public float attractionToNormalFlower;
 
     Vector2 _checkDirection = Vector2.up;
     Rigidbody2D _rigidbody2D;
@@ -31,5 +32,12 @@ public class Bird : MonoBehaviour
 	    }
 
         _rigidbody2D.AddForce(attractionToStartPos*((Vector3)_startPosition - transform.position).normalized*Time.deltaTime);
+
+	    NormalFlower nearestNormalFlower = null;
+	    float distanceToNearest = float.PositiveInfinity;
+	    foreach (NormalFlower nf in NormalFlower.normalFlowers)
+	    {
+            float dist = ()
+	    }
 	}
 }

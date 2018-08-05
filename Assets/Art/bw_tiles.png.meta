@@ -65,6 +65,7 @@ TextureImporter:
     21300120: bw_tiles_57
     21300122: seed1
     21300124: seed2
+    21300126: PlatformFlower
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1429,6 +1430,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6fa542186edbcfc429da3c9864513e35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlatformFlower
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 16
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04139ac2fda730c40995e92d82cd203a
       vertices: []
       indices: 
       edges: []

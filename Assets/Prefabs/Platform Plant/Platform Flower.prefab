@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4526943764279254}
-  - component: {fileID: 114216620235629878}
-  m_Layer: 9
-  m_Name: Bird Flower
+  - component: {fileID: 114451637500092292}
+  m_Layer: 8
+  m_Name: Platform Flower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,9 +37,9 @@ GameObject:
   - component: {fileID: 4915841630600330}
   - component: {fileID: 212567869725223026}
   - component: {fileID: 61296548569142818}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242055642117454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.265991, y: 2.7209587, z: 0}
+  m_LocalPosition: {x: -4.396982, y: 1.7637358, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4915841630600330}
@@ -96,7 +96,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114216620235629878
+--- !u!114 &114451637500092292
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,10 +104,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1242055642117454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23aefbb31e9cc384dbb746c8c37313cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d71e59632e7eea418770f60e3585713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birdPrefab: {fileID: 1096662996580764, guid: 8adda8fe2d99e824ba2d08f5cd6f57ca, type: 2}
 --- !u!212 &212567869725223026
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -143,7 +142,7 @@ SpriteRenderer:
   m_SortingLayerID: 1593329987
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: 5029d742d9e762841ac54d9d999e465c, type: 3}
+  m_Sprite: {fileID: 21300126, guid: 78361ec77276e3d4aa0dd1444a6f8025, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

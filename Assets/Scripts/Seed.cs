@@ -39,7 +39,7 @@ public class Seed : MonoBehaviour
         Vector2 seedHitPosition = col.contacts[0].point;
         seedHitPosition.y = Mathf.Round(seedHitPosition.y);
         seedHitPosition.x = Mathf.Round(seedHitPosition.x+.5f)-.5f;
-        Collider2D hitGround = Physics2D.OverlapPoint(seedHitPosition+Vector2.down*.5f, groundLayer);
+        Collider2D hitGround = Physics2D.OverlapPoint(seedHitPosition+Vector2.down*.1f, groundLayer);
 
         Collider2D hit = Physics2D.OverlapCircle(seedHitPosition, checkForPlantRadius, plantLayer);
         if (col.collider.CompareTag("Ground") && col.contacts[0].normal.y > .5f && !hit && hitGround)

@@ -41,7 +41,7 @@ public class Sprout : MonoBehaviour
 
         if (Time.time - _createTime > _actualBloomTime)
         {
-            GameObject flower = Instantiate(flowerPrefab, transform.position, Quaternion.identity);
+            Instantiate(flowerPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -57,7 +57,7 @@ public class Sprout : MonoBehaviour
         }
 
         transform.position += Vector3.up;
-        GameObject plant = Instantiate(plantPrefab, transform.position + Vector3.down, Quaternion.identity);
+        Instantiate(plantPrefab, transform.position + Vector3.down, Quaternion.identity);
         _lastGrowTime = Time.time;
         _actualGrowTime = growTime + Random.Range(-growTimeRandomness, growTimeRandomness);
     }

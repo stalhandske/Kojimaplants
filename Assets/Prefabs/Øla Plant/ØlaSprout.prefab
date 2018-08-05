@@ -9,110 +9,122 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1242055642117454}
+  m_RootGameObject: {fileID: 1753660399655222}
   m_IsPrefabAsset: 1
---- !u!1 &1242055642117454
+--- !u!1 &1302844801973642
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4526943764279254}
-  - component: {fileID: 114451637500092292}
-  m_Layer: 8
-  m_Name: Platform Flower
+  - component: {fileID: 4855237288270552}
+  - component: {fileID: 212938302825588170}
+  - component: {fileID: 61095278074503528}
+  m_Layer: 9
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1283235969820416
+--- !u!1 &1753660399655222
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4915841630600330}
-  - component: {fileID: 212567869725223026}
-  - component: {fileID: 61296548569142818}
-  m_Layer: 8
-  m_Name: Sprite
-  m_TagString: Ground
+  - component: {fileID: 4553790302164710}
+  - component: {fileID: 114622116731414682}
+  m_Layer: 9
+  m_Name: "\xD8laSprout"
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4526943764279254
+--- !u!4 &4553790302164710
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242055642117454}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.781926, y: 2.9338508, z: 0}
+  m_GameObject: {fileID: 1753660399655222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.6948805, y: 7.1372395, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4915841630600330}
+  - {fileID: 4855237288270552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4915841630600330
+--- !u!4 &4855237288270552
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283235969820416}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1302844801973642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4526943764279254}
+  m_Father: {fileID: 4553790302164710}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61296548569142818
+--- !u!61 &61095278074503528
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283235969820416}
+  m_GameObject: {fileID: 1302844801973642}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.6222}
+  m_Offset: {x: 0, y: 0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.25, y: 0}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.75}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114451637500092292
+--- !u!114 &114622116731414682
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1242055642117454}
+  m_GameObject: {fileID: 1753660399655222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d71e59632e7eea418770f60e3585713, type: 3}
+  m_Script: {fileID: 11500000, guid: dbfbf2951694872448c31d18ee6a6064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212567869725223026
+  plantPrefab: {fileID: 1952272217734058, guid: 02e39be1a30570c438dccc1eb57814a9,
+    type: 2}
+  flowerPrefab: {fileID: 1911577908931596, guid: d7452daa027a18c4188a315d7e4db115,
+    type: 2}
+  growTime: 999
+  growTimeRandomness: 1
+  noGrowLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  bloomTime: 2
+  bloomTimeRandomness: 1
+  spriteRenderer: {fileID: 212938302825588170}
+--- !u!212 &212938302825588170
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283235969820416}
+  m_GameObject: {fileID: 1302844801973642}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -142,7 +154,7 @@ SpriteRenderer:
   m_SortingLayerID: 1593329987
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 565f4ee6eeaded14daf7ee0cee0d2583, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53518a57b134a0c47818c9ab11d7f636, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

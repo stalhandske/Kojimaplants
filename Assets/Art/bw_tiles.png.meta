@@ -66,6 +66,7 @@ TextureImporter:
     21300122: seed1
     21300124: seed2
     21300126: PlatformFlower
+    21300128: seed3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1450,6 +1451,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 04139ac2fda730c40995e92d82cd203a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seed3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ebfe1ce0796a540a99ca14eb47f365
       vertices: []
       indices: 
       edges: []

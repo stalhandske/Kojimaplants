@@ -6,18 +6,26 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float jumpSpeed;
-    public GameObject[] seedPrefabs;
     public float throwSpeed;
     public float throwRandomness;
     public float throwRotationRandom;
     public float throwRotationMin;
     public LayerMask groundLayer;
+    public float coyoteTime;
+    public float rumpRegainTime;
 
     [Header("References")]
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
+    [Header("Assets")]
+    public GameObject[] seedPrefabs;
+    public GameObject pufPrefab;
+
     Rigidbody2D _rigidbody2D;
+    bool _hasJump;
+    float _timeOfGrounded;
+    float _timeOfJump;
 
     void Awake()
     {
@@ -58,13 +66,31 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, .5f, groundLayer);
+
+        if (hit)
         {
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,jumpSpeed);
+            _timeOfGrounded = Time.time;
         }
 
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, .5f, groundLayer);
         animator.SetBool("isInAir", !hit);
+
+        if (Time.time - _timeOfGrounded < coyoteTime && Time.time - _timeOfJump > rumpRegainTime)
+        {
+            _hasJump = true;
+        }
+        else
+        {
+            _hasJump = false;
+        }
+
+        if (Input.GetButtonDown("Fire1") && _hasJump)
+        {
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x,jumpSpeed);
+            _timeOfJump = Time.time;
+            Instantiate(pufPrefab, transform.position, Quaternion.identity);
+        }
+
         animator.SetFloat("AirBlend", _rigidbody2D.velocity.y);
     }
 }

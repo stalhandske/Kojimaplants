@@ -37,7 +37,7 @@ public class Bird : MonoBehaviour
 	    float distanceToNearest = float.PositiveInfinity;
 	    foreach (NormalFlower nf in NormalFlower.normalFlowers)
 	    {
-            float dist = ()
+            //float dist = ()
 	    }
 	}
 }

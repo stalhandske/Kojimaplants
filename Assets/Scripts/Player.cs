@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, .5f, groundLayer);
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, .24f, groundLayer);
 
         if (hit)
         {
@@ -92,5 +93,18 @@ public class Player : MonoBehaviour
         }
 
         animator.SetFloat("AirBlend", _rigidbody2D.velocity.y);
+
+        if (transform.position.y < -40)
+            Destroy(gameObject);
+
+        
+    }
+
+    void OnDisable()
+    {
+        if (FindObjectsOfType<Player>().Length == 1)
+        {
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
+        }
     }
 }

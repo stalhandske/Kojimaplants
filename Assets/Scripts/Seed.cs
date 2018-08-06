@@ -15,10 +15,22 @@ public class Seed : MonoBehaviour
 
     float _createTime;
 
+    public static List<Seed> seeds = new List<Seed>();
+
     void Awake()
     {
         _createTime = Time.time;
         
+    }
+
+    void OnEnable()
+    {
+        seeds.Add(this);
+    }
+
+    void OnDisable()
+    {
+        seeds.Remove(this);
     }
 
     void Update()
